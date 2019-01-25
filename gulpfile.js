@@ -39,4 +39,10 @@ gulp.task('compass', async function() {
         .pipe(gulp.dest('builds/development/css'))
 });
 
+gulp.task('watch', async function() {
+    gulp.watch(coffeeSources, gulp.series('coffee'));
+    gulp.watch(jsSources, gulp.series('js'));
+    gulp.watch('components/sass/*.scss', gulp.series('compass'));
+});
+
 gulp.task('default', gulp.series('coffee', 'js', 'compass'));
