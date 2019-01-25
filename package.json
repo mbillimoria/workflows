@@ -18,7 +18,9 @@
     "gulp-connect": "^5.7.0",
     "gulp-util": "^3.0.8",
     "jquery": "^3.3.1",
-    "mustache": "^3.0.1"
+    "mustache": "^3.0.1",
+    "shell-quote": "^1.6.1",
+    "uglify-js": "^3.4.9"
   },
   "dependencies": {}
 }
